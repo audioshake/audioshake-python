@@ -1,0 +1,11 @@
+{
+  "name": "audioshake",
+  "displayName": "AudioShake",
+  "description": "AudioShake is a platform for state-of-the-art AI source separation, transcription, and content analysis — powering post-production workflows, karaoke, dubbing, speech enhancement, music copyright compliance, improving ASR accuracy, and AI training data preparation — at scale, and in production.",
+  "version": "0.3.11",
+  "author": { "name": "AudioShake" },
+  "homepage": "https://github.com/audioshake/audioshake-python",
+  "repository": "https://github.com/audioshake/audioshake-python",
+  "license": "MIT",
+  "keywords": ["audioshake", "audio", "stem separation", "transcription", "cli"]
+}

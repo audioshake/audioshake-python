@@ -1,0 +1,26 @@
+{
+  "id": "task_0123456789abcdef",
+  "status": "completed",
+  "targets": [
+    {
+      "model": "vocals",
+      "status": "completed",
+      "cost": 1.5,
+      "duration": 30.25,
+      "output": [
+        {"name": "vocals", "format": "wav", "link": "https://storage.test/vocals.wav?sig=1"},
+        {"name": "vocals_residual", "format": "wav", "link": "https://storage.test/vocals_residual.wav?sig=2"}
+      ]
+    },
+    {
+      "model": "drums",
+      "status": "completed",
+      "cost": 1.5,
+      "duration": 28.0,
+      "output": [
+        {"name": "drums", "format": "wav", "link": "https://storage.test/drums.wav?sig=3"},
+        {"name": "drums_residual", "format": "wav", "link": "https://storage.test/drums_residual.wav?sig=4"}
+      ]
+    }
+  ]
+}
