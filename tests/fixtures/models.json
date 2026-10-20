@@ -1,0 +1,1251 @@
+{
+    "models": [
+        {
+            "id": "vocals",
+            "name": "Vocals",
+            "category": "instrumentStemSeparation",
+            "description": "All sung voices together (lead + backing).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "vocals_lead",
+            "name": "Lead Vocals",
+            "category": "instrumentStemSeparation",
+            "description": "Primary lead melody/lyric vocal only.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "vocals_backing",
+            "name": "Backing Vocals",
+            "category": "instrumentStemSeparation",
+            "description": "Backing parts only (harmonies, ad-libs, choir).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "instrumental",
+            "name": "Instrumental",
+            "category": "instrumentStemSeparation",
+            "description": "Full music mix with vocals removed.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "drums",
+            "name": "Drums",
+            "category": "instrumentStemSeparation",
+            "description": "Percussion and drum kit sources (drums, congas, hi-hat, cajon).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "bass",
+            "name": "Bass",
+            "category": "instrumentStemSeparation",
+            "description": "Low-end bass sources (electric bass, double bass, bass synth).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "guitar",
+            "name": "Guitar",
+            "category": "instrumentStemSeparation",
+            "description": "All guitar-family parts together (acoustic + electric).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "guitar_electric",
+            "name": "Electric Guitar",
+            "category": "instrumentStemSeparation",
+            "description": "Electric guitar only (clean or distorted).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "guitar_acoustic",
+            "name": "Acoustic Guitar",
+            "category": "instrumentStemSeparation",
+            "description": "Acoustic/plucked guitar-family sources (acoustic guitar, banjo, lute).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "piano",
+            "name": "Piano",
+            "category": "instrumentStemSeparation",
+            "description": "Acoustic piano only.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "keys",
+            "name": "Keys",
+            "category": "instrumentStemSeparation",
+            "description": "Keyboard family: acoustic, electric, digital pianos, clavinet, Hammond, harpsichord.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "strings",
+            "name": "Strings",
+            "category": "instrumentStemSeparation",
+            "description": "Bowed or pizzicato string instruments and sections.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "wind",
+            "name": "Wind",
+            "category": "instrumentStemSeparation",
+            "description": "Wind instruments including woodwind and brass (flute, saxophone, clarinet, bassoon, harmonica).",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "other",
+            "name": "Other",
+            "category": "instrumentStemSeparation",
+            "description": "Everything except vocals, drums, and bass.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "other-x-guitar",
+            "name": "Other (No Guitar)",
+            "category": "instrumentStemSeparation",
+            "description": "Everything except vocals, drums, bass, and guitar.",
+            "access": "enabled",
+            "creditsPerMinute": 1.5,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "multi_voice",
+            "name": "Multi Voice",
+            "category": "speechSeparation",
+            "description": "Outputs one stem per speaker from a mixed multi-speaker source, even with overlapping speech.",
+            "access": "enabled",
+            "creditsPerMinute": 10,
+            "limits": {
+                "maxInputDurationSeconds": 5400
+            },
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "speech_denoise",
+            "name": "Speech Denoise",
+            "category": "speechSeparation",
+            "description": "Non-generative denoising. Removes background noise, hum, and interference while preserving natural acoustics. Effective across all resolutions, including low-quality and heavily degraded speech.",
+            "access": "enabled",
+            "creditsPerMinute": 1.5,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "speech_dereverb",
+            "name": "Speech De-reverb",
+            "category": "speechSeparation",
+            "description": "Removes reverberant room signal (reflections, echo, room tail) to improve intelligibility in echoey spaces and ease downstream post-production. Non-generative.",
+            "access": "enabled",
+            "creditsPerMinute": 2,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "dialogue",
+            "name": "Dialogue",
+            "category": "postProduction",
+            "description": "Speech-focused stem for podcasts, interviews, and film/TV dialogue.",
+            "access": "enabled",
+            "creditsPerMinute": 1.5,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "music",
+            "name": "Music",
+            "category": "instrumentStemSeparation",
+            "description": "Music bed separated from non-musical content.",
+            "access": "requestAccess",
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "music_fx",
+            "name": "Music FX",
+            "category": "postProduction",
+            "description": "Keep music + effects; remove dialogue.",
+            "access": "enabled",
+            "creditsPerMinute": 1.5,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "music_removal",
+            "name": "Music Removal",
+            "category": "copyrightCompliance",
+            "description": "Keep speech + effects; remove background music.",
+            "access": "enabled",
+            "creditsPerMinute": 10,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "effects",
+            "name": "Effects",
+            "category": "postProduction",
+            "description": "Ambience and SFX bed with dialogue and music removed.",
+            "access": "enabled",
+            "creditsPerMinute": 1.5,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "smart_mute",
+            "name": "Smart Mute",
+            "category": "postProduction",
+            "description": "Intelligently mute selected content while preserving the rest.",
+            "access": "requestAccess",
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "aiff",
+                "wav",
+                "flac",
+                "mp3",
+                "mp4"
+            ]
+        },
+        {
+            "id": "transcription",
+            "name": "Lyric Transcription",
+            "category": "lyricTranscription",
+            "description": "Generate a line-level lyric transcript from a song. Best for getting lyrics as text.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "limits": {
+                "maxInputDurationSeconds": 2700
+            },
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "json",
+                "txt"
+            ],
+            "supportedLanguages": [
+                "af",
+                "ar",
+                "az",
+                "be",
+                "bg",
+                "bs",
+                "ca",
+                "cs",
+                "cy",
+                "da",
+                "de",
+                "el",
+                "en",
+                "es",
+                "et",
+                "fa",
+                "fi",
+                "fr",
+                "gl",
+                "he",
+                "hi",
+                "hr",
+                "hu",
+                "hy",
+                "id",
+                "is",
+                "it",
+                "ja",
+                "kk",
+                "kn",
+                "ko",
+                "lt",
+                "lv",
+                "mi",
+                "mk",
+                "mr",
+                "ms",
+                "ne",
+                "nl",
+                "no",
+                "pl",
+                "pt",
+                "ro",
+                "ru",
+                "sk",
+                "sl",
+                "sr",
+                "sv",
+                "sw",
+                "ta",
+                "th",
+                "tl",
+                "tr",
+                "uk",
+                "ur",
+                "vi",
+                "zh"
+            ]
+        },
+        {
+            "id": "alignment",
+            "name": "Lyric Alignment",
+            "category": "lyricTranscription",
+            "description": "Generate precise word-level and line-level timestamps. Use this for karaoke, subtitles, and any workflow that needs per-word timing. Transcribes automatically if no transcript is provided.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "limits": {
+                "maxInputDurationSeconds": 2700
+            },
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                },
+                {
+                    "id": "transcript",
+                    "description": "Optional existing lyrics or transcript to align against",
+                    "required": false,
+                    "taskFields": [
+                        "transcriptUrl",
+                        "transcriptAssetId"
+                    ],
+                    "formats": {
+                        "text": [
+                            "json",
+                            "txt"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "json",
+                "txt",
+                "srt"
+            ],
+            "supportedLanguages": [
+                "af",
+                "ar",
+                "az",
+                "be",
+                "bg",
+                "bs",
+                "ca",
+                "cs",
+                "cy",
+                "da",
+                "de",
+                "el",
+                "en",
+                "es",
+                "et",
+                "fa",
+                "fi",
+                "fr",
+                "gl",
+                "he",
+                "hi",
+                "hr",
+                "hu",
+                "hy",
+                "id",
+                "is",
+                "it",
+                "ja",
+                "kk",
+                "kn",
+                "ko",
+                "lt",
+                "lv",
+                "mi",
+                "mk",
+                "mr",
+                "ms",
+                "ne",
+                "nl",
+                "no",
+                "pl",
+                "pt",
+                "ro",
+                "ru",
+                "sk",
+                "sl",
+                "sr",
+                "sv",
+                "sw",
+                "ta",
+                "th",
+                "tl",
+                "tr",
+                "uk",
+                "ur",
+                "vi",
+                "zh"
+            ]
+        },
+        {
+            "id": "music_detection",
+            "name": "Music Detection",
+            "category": "copyrightCompliance",
+            "description": "Returns time ranges where music is present.",
+            "access": "enabled",
+            "creditsPerMinute": 0.5,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "json"
+            ]
+        },
+        {
+            "id": "music_identification",
+            "name": "Music Identification",
+            "category": "copyrightCompliance",
+            "description": "Identify music and return track metadata.",
+            "access": "enabled",
+            "creditsPerMinute": 1,
+            "inputs": [
+                {
+                    "id": "media",
+                    "description": "Source audio or video file",
+                    "required": true,
+                    "taskFields": [
+                        "url",
+                        "assetId"
+                    ],
+                    "formats": {
+                        "audio": [
+                            "wav",
+                            "aiff",
+                            "flac",
+                            "mp3",
+                            "aac",
+                            "m4a"
+                        ],
+                        "video": [
+                            "mp4",
+                            "mov"
+                        ]
+                    }
+                }
+            ],
+            "outputFormats": [
+                "json"
+            ]
+        }
+    ]
+}

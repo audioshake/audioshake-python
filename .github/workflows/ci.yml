@@ -1,0 +1,84 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # publish.yml calls this workflow, so a release tag passes these same checks
+  # and publishes the dist the package job built and verified.
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          version: '0.12.17'
+          python-version: '3.12'
+      - run: uv lock --check
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy
+      # Every exported function, method and attribute must declare its type.
+      - run: uv run --with pyright==1.1.414 pyright --verifytypes audioshake --ignoreexternal
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14', '3.15']
+    env:
+      # The skill/CLI sync check fails here, rather than skips, if SKILL.md is missing.
+      AUDIOSHAKE_REQUIRE_SKILL: '1'
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          version: '0.12.17'
+          python-version: ${{ matrix.python-version }}
+      - run: uv sync --frozen
+      - run: uv run pytest --cov=audioshake --cov-report=term-missing --cov-fail-under=85
+
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          version: '0.12.17'
+          python-version: '3.12'
+          # On a release tag this job builds what gets published, so never
+          # restore a cache another run wrote.
+          enable-cache: false
+      - run: uv build
+      - run: uvx twine check --strict dist/*
+      - name: Install the wheel into a fresh environment and smoke-test it
+        # Run from outside the checkout so Python imports the installed wheel,
+        # not the source tree in the working directory.
+        working-directory: ${{ runner.temp }}
+        run: |
+          uv venv wheel-env
+          uv pip install --python wheel-env "$GITHUB_WORKSPACE"/dist/*.whl
+          wheel-env/bin/audioshake --help
+          wheel-env/bin/python -c "import audioshake; print(audioshake.__version__)"
+      # publish.yml downloads this artifact from the same run and uploads it to PyPI.
+      - uses: actions/upload-artifact@v7.0.1
+        with:
+          name: dist
+          path: dist/
+          if-no-files-found: error
+          retention-days: 5
+          overwrite: true

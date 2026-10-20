@@ -1,0 +1,31 @@
+version: 2
+updates:
+  # Workflow actions are pinned to commit SHAs; this keeps the pins current.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    # Let a new release age a week before proposing it.
+    cooldown:
+      default-days: 7
+
+  # Python dependencies, through uv.lock. This is a library: the minimum
+  # versions in pyproject.toml are what users resolve against, so they are
+  # raised by hand when the code needs it, never by a bot. Our requirements
+  # are floors (httpx>=0.27), which every newer release satisfies, so
+  # increase-if-necessary leaves them alone and only the lockfile moves.
+  - package-ecosystem: uv
+    directory: /
+    schedule:
+      interval: weekly
+    versioning-strategy: increase-if-necessary
+    cooldown:
+      default-days: 7
+    # One PR a week for routine bumps instead of one per package.
+    groups:
+      python-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
