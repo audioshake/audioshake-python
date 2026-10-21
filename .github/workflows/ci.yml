@@ -75,7 +75,7 @@ jobs:
           wheel-env/bin/audioshake --help
           wheel-env/bin/python -c "import audioshake; print(audioshake.__version__)"
       # publish.yml downloads this artifact from the same run and uploads it to PyPI.
-      - uses: actions/upload-artifact@v7.0.1
+      - uses: actions/upload-artifact@v7.0.2
         with:
           name: dist
           path: dist/
