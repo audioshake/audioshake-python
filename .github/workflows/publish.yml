@@ -70,7 +70,7 @@ jobs:
       contents: read
       id-token: write   # trusted publishing; no API token needed
     steps:
-      - uses: actions/download-artifact@v8.0.1
+      - uses: actions/download-artifact@v8.0.2
         with:
           name: dist
           path: dist/
