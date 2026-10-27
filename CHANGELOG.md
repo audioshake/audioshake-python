@@ -5,7 +5,11 @@ All notable changes to this project are documented here. The format follows
 [Semantic Versioning](https://semver.org/). While the major version is 0 the
 public surface may still change between minor releases.
 
-## [0.1.0] - Unreleased
+## [Unreleased]
+
+Nothing yet.
+
+## [0.1.0] - 2026-10-27
 
 Initial public release of the `audioshake` Python library and CLI for the
 [AudioShake API](https://developer.audioshake.ai). Python 3.10 or later.
@@ -41,4 +45,5 @@ Initial public release of the `audioshake` Python library and CLI for the
 - A Claude Code plugin (`plugin/`) that teaches Claude to use the CLI and
   library.
 
+[Unreleased]: https://github.com/audioshake/audioshake-python/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/audioshake/audioshake-python/releases/tag/v0.1.0
