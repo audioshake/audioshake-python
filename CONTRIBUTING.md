@@ -93,13 +93,13 @@ behind it. The rules that most often come up in review:
 
 ## Docs travel with the change
 
-`plugin/skills/audioshake/SKILL.md` teaches AI agents to use the CLI and ships
+`plugin/skills/audioshake-cli/SKILL.md` teaches AI agents to use the CLI and ships
 as a Claude Code plugin from `plugin/`, so it must match the CLI exactly.
 When your change touches a command, an option, a default, the `--json` shape,
 the output layout, an exit code, authentication or model aliases, update in
 the same PR:
 
-1. `plugin/skills/audioshake/SKILL.md`, and bump `version` in
+1. `plugin/skills/audioshake-cli/SKILL.md`, and bump `version` in
    `plugin/.claude-plugin/plugin.json` when its guidance changes.
 2. `docs/cli.md`, and `docs/library.md` for library changes.
 3. `CHANGELOG.md`: add a line to the top section, written as what the release

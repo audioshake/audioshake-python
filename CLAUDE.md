@@ -39,7 +39,7 @@ formats Python code blocks inside Markdown, so keep doc examples under 100 colum
 
 ## When you change the CLI, update the skill and the docs
 
-`plugin/skills/audioshake/SKILL.md` teaches agents to use the CLI. `plugin/` is
+`plugin/skills/audioshake-cli/SKILL.md` teaches agents to use the CLI. `plugin/` is
 a Claude Code plugin, listed in the `audioshake/claude-plugins` marketplace,
 which fetches only that folder. It must match the CLI exactly. Whenever
 a change touches any of these:
@@ -52,7 +52,7 @@ a change touches any of these:
 
 then in the same PR:
 
-1. Update `plugin/skills/audioshake/SKILL.md` (tables, examples, gotchas).
+1. Update `plugin/skills/audioshake-cli/SKILL.md` (tables, examples, gotchas).
 2. Update `docs/cli.md` and, for library changes, `docs/library.md`.
 3. Add a line to the top section of `CHANGELOG.md`. Until 0.1.0 ships, that is
    the 0.1.0 entry itself, written as what the release does, not how it changed.

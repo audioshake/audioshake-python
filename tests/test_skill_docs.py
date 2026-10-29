@@ -14,7 +14,7 @@ import pytest
 from audioshake.cli import main
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILL_PATH = ROOT / "plugin" / "skills" / "audioshake" / "SKILL.md"
+SKILL_PATH = ROOT / "plugin" / "skills" / "audioshake-cli" / "SKILL.md"
 # Set to 1 in CI, which runs from the repository: there a missing skill must fail
 # rather than skip, or the check that keeps it in step with the CLI would
 # silently stop running.
@@ -56,7 +56,7 @@ OPTIONS = [
 @pytest.mark.parametrize("name,command", COMMANDS, ids=[c[0] for c in COMMANDS])
 def test_every_command_is_documented(name, command):
     leaf = name.split()[-1]
-    assert leaf in SKILL, f"`{name}` is missing from plugin/skills/audioshake/SKILL.md"
+    assert leaf in SKILL, f"`{name}` is missing from plugin/skills/audioshake-cli/SKILL.md"
     assert leaf in CLI_DOC, f"`{name}` is missing from docs/cli.md"
 
 
@@ -66,7 +66,7 @@ def test_every_option_is_documented(where, param):
     if param.name == "version":
         return
     assert any(form in SKILL for form in forms), (
-        f"{where} option {forms} is missing from plugin/skills/audioshake/SKILL.md"
+        f"{where} option {forms} is missing from plugin/skills/audioshake-cli/SKILL.md"
     )
     assert any(form in CLI_DOC for form in forms), (
         f"{where} option {forms} is missing from docs/cli.md"
