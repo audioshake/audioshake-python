@@ -10,7 +10,7 @@
   "skills": "./skills",
   "interface": {
     "displayName": "AudioShake CLI",
-    "shortDescription": "Stems, dialogue isolation, transcription and lyric alignment",
+    "shortDescription": "Stems, dialogue and lyrics",
     "longDescription": "AudioShake is a platform for state-of-the-art AI source separation, transcription, and content analysis — powering post-production workflows, karaoke, dubbing, speech enhancement, music copyright compliance, improving ASR accuracy, and AI training data preparation — at scale, and in production. This plugin teaches Codex to run AudioShake models on audio and video files with the audioshake CLI and Python library: stem separation (vocals, drums, bass, guitar, piano and more), dialogue and effects isolation, speech denoise and dereverb, multi-speaker separation, music detection and removal, and lyric transcription and alignment.",
     "developerName": "AudioShake",
     "category": "Creativity",
