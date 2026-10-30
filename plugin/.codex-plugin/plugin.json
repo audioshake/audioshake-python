@@ -1,0 +1,27 @@
+{
+  "name": "audioshake-cli",
+  "version": "0.3.11",
+  "description": "Run AudioShake models from Codex with the audioshake CLI and Python library: stem separation, dialogue isolation, speech clean-up, lyric transcription and alignment.",
+  "author": { "name": "AudioShake", "url": "https://www.audioshake.ai" },
+  "homepage": "https://github.com/audioshake/audioshake-python",
+  "repository": "https://github.com/audioshake/audioshake-python",
+  "license": "MIT",
+  "keywords": ["audioshake", "audio", "stem separation", "transcription", "cli"],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "AudioShake CLI",
+    "shortDescription": "Stems, dialogue isolation, transcription and lyric alignment",
+    "longDescription": "AudioShake is a platform for state-of-the-art AI source separation, transcription, and content analysis — powering post-production workflows, karaoke, dubbing, speech enhancement, music copyright compliance, improving ASR accuracy, and AI training data preparation — at scale, and in production. This plugin teaches Codex to run AudioShake models on audio and video files with the audioshake CLI and Python library: stem separation (vocals, drums, bass, guitar, piano and more), dialogue and effects isolation, speech denoise and dereverb, multi-speaker separation, music detection and removal, and lyric transcription and alignment.",
+    "developerName": "AudioShake",
+    "category": "Creativity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Split song.wav into vocals, drums, bass and other",
+      "Pull the dialogue out of scene.mp4 and drop the music",
+      "Transcribe the lyrics of track.mp3 with word timings"
+    ],
+    "websiteURL": "https://www.audioshake.ai",
+    "privacyPolicyURL": "https://www.audioshake.ai/privacy-policy",
+    "termsOfServiceURL": "https://www.audioshake.ai/terms"
+  }
+}
