@@ -76,7 +76,8 @@ target-version = "py310"
 line-length = 100
 
 [tool.ruff.lint]
-# Builds on ruff's default rules (E4, E7, E9, F) rather than replacing them.
+# Builds on ruff's default rules rather than replacing them. Anything the code
+# relies on is listed here, since the default set changes between releases.
 extend-select = [
     "E",    # pycodestyle errors
     "B",    # bugbear: likely bugs
@@ -91,6 +92,7 @@ extend-select = [
     "C4",   # comprehensions
     "RET",  # return statements
     "D",    # docstrings, on the library's public API (see per-file-ignores)
+    "DTZ",  # naive datetimes; a default rule before ruff 0.17, so keep it on
 ]
 ignore = [
     "E501", # line length is the formatter's job
