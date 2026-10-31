@@ -1,5 +1,5 @@
 ---
-name: audioshake
+name: audioshake-cli
 description: Use the `audioshake` CLI and Python library to run AudioShake models on audio or video files: stem separation (vocals, drums, bass, guitar, piano...), dialogue and effects isolation, speech denoise/dereverb, multi-speaker separation, music detection/removal, lyric transcription and alignment. Trigger when the user wants stems, an instrumental, an a cappella, isolated dialogue, speaker separation, lyrics or word timings from media, or asks about AudioShake tasks, models or credits.
 ---
 
