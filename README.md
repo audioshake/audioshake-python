@@ -187,12 +187,21 @@ vocal stems.
 
 ## Claude Code plugin
 
-The `plugin/` folder is a Claude Code plugin that teaches Claude to use the CLI
-and library. Install it from the AudioShake marketplace inside Claude Code:
+The `plugin/` folder is a plugin for Claude Code and Codex that teaches the
+agent to use the CLI and library. Install it from the AudioShake marketplace.
+
+Inside Claude Code:
 
 ```
 /plugin marketplace add audioshake/claude-plugins
 /plugin install audioshake-cli@audioshake
+```
+
+From your shell, for Codex:
+
+```bash
+codex plugin marketplace add audioshake/claude-plugins
+codex plugin add audioshake-cli@audioshake
 ```
 
 Then ask for stems, an instrumental, isolated dialogue or lyrics from a file and

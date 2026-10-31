@@ -40,8 +40,10 @@ formats Python code blocks inside Markdown, so keep doc examples under 100 colum
 ## When you change the CLI, update the skill and the docs
 
 `plugin/skills/audioshake-cli/SKILL.md` teaches agents to use the CLI. `plugin/` is
-a Claude Code plugin, listed in the `audioshake/claude-plugins` marketplace,
-which fetches only that folder. It must match the CLI exactly. Whenever
+a Claude Code and Codex plugin, listed in the `audioshake/claude-plugins` marketplace,
+which fetches only that folder. The two manifests, `.claude-plugin/plugin.json`
+and `.codex-plugin/plugin.json`, must carry the same `name` and `version`.
+It must match the CLI exactly. Whenever
 a change touches any of these:
 
 - a command, option or argument (added, renamed, removed, new default)
