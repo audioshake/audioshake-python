@@ -192,7 +192,7 @@ and library. Install it from the AudioShake marketplace inside Claude Code:
 
 ```
 /plugin marketplace add audioshake/claude-plugins
-/plugin install audioshake@audioshake
+/plugin install audioshake-cli@audioshake
 ```
 
 Then ask for stems, an instrumental, isolated dialogue or lyrics from a file and
