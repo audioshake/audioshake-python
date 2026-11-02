@@ -185,7 +185,7 @@ format. Several models run from one upload: `-m effects,dialogue,music_fx` gives
 the dialogue, music and effects stems, `-m vocals_backing,vocals_lead` the two
 vocal stems.
 
-## Claude Code plugin
+## Claude Code and Codex plugin
 
 The `plugin/` folder is a plugin for Claude Code and Codex that teaches the
 agent to use the CLI and library. Install it from the AudioShake marketplace.
@@ -205,7 +205,7 @@ codex plugin add audioshake-cli@audioshake
 ```
 
 Then ask for stems, an instrumental, isolated dialogue or lyrics from a file and
-Claude will run `audioshake` for you. The skill is kept in step with the CLI by
+the agent runs `audioshake` for you. The skill is kept in step with the CLI by
 `tests/test_skill_docs.py`.
 
 ## Development
