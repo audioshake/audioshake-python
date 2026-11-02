@@ -193,14 +193,14 @@ agent to use the CLI and library. Install it from the AudioShake marketplace.
 Inside Claude Code:
 
 ```
-/plugin marketplace add audioshake/claude-plugins
+/plugin marketplace add audioshake/plugins
 /plugin install audioshake-cli@audioshake
 ```
 
 From your shell, for Codex:
 
 ```bash
-codex plugin marketplace add audioshake/claude-plugins
+codex plugin marketplace add audioshake/plugins
 codex plugin add audioshake-cli@audioshake
 ```
 
